@@ -1,1 +1,20 @@
 
+using System.Collections;
+using System.Collection.Generic;
+using UnityEngine;
+
+public class compassrotate : Monobehaviour;
+{
+public Transform player;
+Vector3 vector;
+
+void Start(){
+
+}
+
+void Update(){
+vector.z = player.eulerAngles.y;
+transform.localEulerAngles = vector;
+
+}
+}
